@@ -7,7 +7,7 @@ We welcome contributions — especially from clinicians, pharmacists, and health
 1. **Fork** the repository
 2. **Clone** your fork:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/hippocrates.git
+   git clone https://github.com/kimogrant/clinical-skills.git
    ```
 3. **Create a branch**:
    ```bash

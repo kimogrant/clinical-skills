@@ -108,7 +108,7 @@ Hippocrates is designed with safety-first architecture:
 We welcome contributions — especially from clinicians, pharmacists, and health informaticists:
 
 ```bash
-git clone https://github.com/0xkimo/clinical-skills.git
+git clone https://github.com/kimogrant/clinical-skills.git
 # Make your changes to SKILL.md
 # Submit a PR with: [Module] Brief description
 ```
@@ -128,7 +128,7 @@ If this project helps you build better clinical AI, consider giving it a star. I
 
 ## License
 
-MIT © [0xkimo](https://github.com/0xkimo/clinical-skills)
+MIT © [kimogrant](https://github.com/kimogrant/clinical-skills)
 
 ---
 
