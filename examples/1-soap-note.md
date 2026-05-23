@@ -1,6 +1,6 @@
 # Example 1: SOAP Note Generation
 
-> This shows how Hippocrates processes a real clinical scenario — from Pre-Action Checklist gate through to full SOAP note output.
+> This shows how Hippocrates (`clinical-skills`) processes a real scenario — Pre-Action gate → `references/module-01-documentation.md` templates → SOAP output.
 
 ---
 

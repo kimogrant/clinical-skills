@@ -13,10 +13,11 @@ We welcome contributions — especially from clinicians, pharmacists, and health
    ```bash
    git checkout -b feature/your-module-name
    ```
-4. **Make your changes**. The core deliverable is `SKILL.md`. If adding a new module:
-   - Follow the existing module template structure (Trigger → Pre-Action Checklist → Input → Output format)
-   - Add a corresponding example in `examples/`
-   - Update `PROJECT.md` structure section
+4. **Make your changes**:
+   - Clinical templates → edit the relevant `references/module-*.md`
+   - Triggers / hard rules / index → edit `SKILL.md` only
+   - New module: add `references/module-0X-*.md`, index row in `SKILL.md`, example in `examples/`
+   - Bump `VERSION` and `references/changelog.md`
 5. **Commit** with a descriptive message:
    ```bash
    git commit -m "[Module] Brief description of change"
@@ -33,7 +34,7 @@ We welcome contributions — especially from clinicians, pharmacists, and health
 
 ## Review Process
 
-- At least 1 reviewer with clinical background must approve all PRs affecting `SKILL.md`
+- At least 1 reviewer with clinical background must approve PRs affecting `references/` clinical content or `SKILL.md` safety rules
 - Non-clinical PRs (typos, formatting, README updates) may be self-reviewed by maintainers
 - All PRs must pass the testing checklist in `PROJECT.md`
 
@@ -43,6 +44,20 @@ We welcome contributions — especially from clinicians, pharmacists, and health
 - Debate clinical content on its merits — cite evidence, not authority
 - Patient safety is the highest priority. When in doubt, err on the side of caution.
 - This project adheres to a "do no harm" principle. Contributions that could enable unsafe clinical AI practices will not be merged.
+
+## Regenerating references (maintainers)
+
+After editing a monolithic draft only:
+
+```bash
+python scripts/split_skill.py
+```
+
+Canonical source is `references/*.md`, not a single giant `SKILL.md` body.
+
+## Related
+
+- [Allergos](https://github.com/kimogrant/allergos) — allergy & immunology skill
 
 ## Questions?
 
