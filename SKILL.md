@@ -2,6 +2,7 @@
 
 > **AI Agent Clinical Skills Suite** · Covering 7 clinical domains: Documentation, Diagnosis, Prescribing, Labs, Communication, EBM, Clinical Calculators
 > Compatible with Claude Code · Codex · Cursor · OpenCode · Gemini CLI
+> Sibling skill: [Allergos](https://github.com/kimogrant/allergos) (allergy & immunology)
 
 ---
 
@@ -10,7 +11,7 @@
 ```yaml
 name: hippocrates
 version: 1.1.0
-author: clinical-skills
+author: kimogrant
 description: A comprehensive clinical assistant skill for AI coding agents, covering clinical documentation, diagnostic reasoning, prescription review, lab interpretation, patient communication, evidence-based medicine, and clinical calculators. Features mandatory pre-action checklists (superpowers-style) to prevent hallucination on incomplete data.
 tags: [medical, clinical, healthcare, diagnosis, prescription, evidence-based-medicine, EBM]
 platforms: [claude-code, codex, cursor, opencode, gemini-cli]

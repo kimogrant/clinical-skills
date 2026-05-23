@@ -10,6 +10,8 @@
 
 > The first open-source, production-grade clinical skill suite for AI coding agents. Give your Claude Code, Codex, or Cursor agent the clinical reasoning of a medical resident — with built-in safety guardrails.
 
+**Related:** [Allergos](https://github.com/kimogrant/allergos) (allergy & immunology) · [CEO Operating System](https://github.com/kimogrant/ceo-operating-system) · [Web3 bounty PoC skill](https://github.com/kimogrant/web3-bounty-poc-report-skill) · [EVM audit skills](https://github.com/kimogrant/evm-audit-skill)
+
 ---
 
 ## Why Hippocrates?
@@ -29,7 +31,7 @@ AI coding agents are brilliant at writing software. But ask them to write a SOAP
 ### Claude Code
 
 ```bash
-git clone https://github.com/0xkimo/clinical-skills.git
+git clone https://github.com/kimogrant/clinical-skills.git
 mkdir -p ~/.claude/skills
 cp SKILL.md ~/.claude/skills/hippocrates.md
 ```
