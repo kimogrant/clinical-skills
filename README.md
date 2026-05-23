@@ -29,7 +29,7 @@ AI coding agents are brilliant at writing software. But ask them to write a SOAP
 ### Claude Code
 
 ```bash
-git clone https://github.com/clinical-skills/hippocrates.git
+git clone https://github.com/0xkimo/clinical-skills.git
 mkdir -p ~/.claude/skills
 cp SKILL.md ~/.claude/skills/hippocrates.md
 ```
@@ -108,7 +108,7 @@ Hippocrates is designed with safety-first architecture:
 We welcome contributions — especially from clinicians, pharmacists, and health informaticists:
 
 ```bash
-git clone https://github.com/clinical-skills/hippocrates.git
+git clone https://github.com/0xkimo/clinical-skills.git
 # Make your changes to SKILL.md
 # Submit a PR with: [Module] Brief description
 ```
@@ -128,7 +128,7 @@ If this project helps you build better clinical AI, consider giving it a star. I
 
 ## License
 
-MIT © [clinical-skills](https://github.com/clinical-skills)
+MIT © [0xkimo](https://github.com/0xkimo/clinical-skills)
 
 ---
 
