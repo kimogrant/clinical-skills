@@ -11,7 +11,7 @@
 name: hippocrates
 version: 1.1.0
 author: clinical-skills
-description: A comprehensive clinical assistant skill for AI coding agents, covering medical documentation, diagnostic reasoning, prescription review, lab interpretation, patient communication, and evidence-based medicine. Features mandatory pre-action checklists (superpowers-style) to prevent hallucination on incomplete data.
+description: A comprehensive clinical assistant skill for AI coding agents, covering clinical documentation, diagnostic reasoning, prescription review, lab interpretation, patient communication, evidence-based medicine, and clinical calculators. Features mandatory pre-action checklists (superpowers-style) to prevent hallucination on incomplete data.
 tags: [medical, clinical, healthcare, diagnosis, prescription, evidence-based-medicine, EBM]
 platforms: [claude-code, codex, cursor, opencode, gemini-cli]
 language: [en]
@@ -89,7 +89,7 @@ If any unchecked → "I need [missing item(s)] before I can write the note."
 
 **HPI** (OLDCARTS):
 - Onset: [timing / precipitating factors / acuity]
-- Location: [site / radiation]
+- Location: [site]
 - Duration: [time since onset, pattern]
 - Character: [quality / severity 0–10 / timing]
 - Aggravating/Alleviating: [factors]
@@ -152,10 +152,11 @@ If any unchecked → "I need [missing item(s)] before I can write the note."
 
 **Past Medical History**:
 - Chronic conditions: [list with duration]
-- Surgeries: [procedure, year, complications]
 - Hospitalizations: [reason, year, outcome]
 
-**Past Surgical History**: As above
+**Past Surgical History**:
+- Surgeries: [procedure, year, complications]
+
 **Allergies**: [drug/food/environmental] → [reaction type]
 **Medications**: [name (generic) + dose + route + frequency + adherence]
 **Family History**: [1st-degree relatives, heritable conditions, age at diagnosis]
@@ -560,6 +561,19 @@ If any unchecked → "I need [missing item(s)] before I can search for evidence.
 
 ## Module 7: Clinical Calculators
 
+### Pre-Action Checklist
+
+```
+**Calculator Gate** — Confirm before computing:
+
+- [ ] Clinical scenario is clearly identified (DVT suspicion / pneumonia severity / Afib / sepsis / etc.)
+- [ ] All required inputs for the relevant calculator(s) are available
+- [ ] Patient demographics (age, sex, weight if applicable) are specified
+- [ ] Calculator result will directly inform a clinical decision
+
+If any unchecked → "I need [missing item(s)] before I can compute this score."
+```
+
 Auto-calculate when relevant context triggers:
 
 | Calculator | Indication | Key Inputs |
@@ -603,7 +617,7 @@ Refuse: assisted death counseling | unapproved experimental treatment outside cl
 
 | Version | Date | Changes |
 |:---|:---|:---|
-| 1.1.0 | 2026-05-23 | Added Pre-Action Checklist protocol (superpowers-style gate) for all 6 modules + calculators |
+| 1.1.0 | 2026-05-23 | Added Pre-Action Checklist protocol (superpowers-style gate) for all 7 modules; added H&P and Discharge Summary templates; created examples/ directory with 3 real-world case studies; added CONTRIBUTING.md and .gitignore |
 | 1.0.0 | 2026-05-22 | Initial release: 6 core modules + safety framework + clinical calculators |
 
 ---
