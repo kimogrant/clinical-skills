@@ -10,8 +10,6 @@
 
 > Production-grade clinical skill for AI agents — documentation, diagnosis, prescribing, labs, communication, EBM, and calculators with Pre-Action safety gates.
 
-**Related:** [Allergos](https://github.com/kimogrant/allergos) · [CEO OS](https://github.com/kimogrant/ceo-operating-system) · [Web3 bounty PoC](https://github.com/kimogrant/web3-bounty-poc-report-skill) · [EVM audit](https://github.com/kimogrant/evm-audit-skill)
-
 English | [简体中文](./README.zh.md)
 
 ---

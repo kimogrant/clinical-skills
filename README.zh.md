@@ -2,7 +2,7 @@
 
 面向 AI Agent 的**全科临床技能包**：病历、诊断、处方审查、检验解读、医患沟通、循证医学与临床计算器。
 
-**系列：** [Allergos 过敏专科](https://github.com/kimogrant/allergos) · **本仓库** · [CEO OS](https://github.com/kimogrant/ceo-operating-system) · [Web3 赏金](https://github.com/kimogrant/web3-bounty-poc-report-skill) · [EVM 审计](https://github.com/kimogrant/evm-audit-skill)
+面向 AI Agent 的**全科临床技能包**：病历、诊断、处方审查、检验解读、医患沟通、循证医学与临床计算器。
 
 ---
 
